@@ -9,6 +9,8 @@ public class CarNPCMovement : MonoBehaviour
     [SerializeField] private float MovementSpeed;
 
     [SerializeField] private int carMaxLifeTime;
+
+    [SerializeField] private float repulsionForce;
     
     private float timerCounter;
 
@@ -36,20 +38,20 @@ public class CarNPCMovement : MonoBehaviour
 
             if (collision.transform.position.x < transform.position.x)
             {
-                collision.rigidbody.AddForce(new Vector2(-2, 0), ForceMode2D.Impulse);
+                collision.rigidbody.AddForce(new Vector2(-repulsionForce, 0), ForceMode2D.Impulse);
             }
             else
             {
-                collision.rigidbody.AddForce(new Vector2(2, 0), ForceMode2D.Impulse);
+                collision.rigidbody.AddForce(new Vector2(repulsionForce, 0), ForceMode2D.Impulse);
             }
             
             if (collision.transform.position.y < transform.position.y)
             {
-                collision.rigidbody.AddForce(new Vector2(0, -2), ForceMode2D.Impulse);
+                collision.rigidbody.AddForce(new Vector2(0, -repulsionForce), ForceMode2D.Impulse);
             }
             else
             {
-                collision.rigidbody.AddForce(new Vector2(0, 2), ForceMode2D.Impulse);
+                collision.rigidbody.AddForce(new Vector2(0, repulsionForce), ForceMode2D.Impulse);
             }
 
             gameObject.SetActive(false);

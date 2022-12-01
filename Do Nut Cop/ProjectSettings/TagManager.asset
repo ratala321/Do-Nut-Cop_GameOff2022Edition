@@ -47,8 +47,17 @@ TagManager:
   - name: background
     uniqueID: 2002460083
     locked: 0
+  - name: road
+    uniqueID: 1224563747
+    locked: 0
+  - name: props
+    uniqueID: 1449201783
+    locked: 0
   - name: Buildings
     uniqueID: 1017962635
+    locked: 0
+  - name: carNPC
+    uniqueID: 349065995
     locked: 0
   - name: player
     uniqueID: 752784349

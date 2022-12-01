@@ -63,9 +63,11 @@
     <Compile Include="Assets\Script\TimerScript\TimerSetUp.cs" />
     <Compile Include="Assets\Script\DonutCounter\OnCopDonutCounter.cs" />
     <Compile Include="Assets\Script\Camera\CameraSettings.cs" />
+    <Compile Include="Assets\Script\CarNPC\CarNPCMovement.cs" />
     <Compile Include="Assets\Script\DonutStore\DonutStoreInteraction.cs" />
     <Compile Include="Assets\Script\PlayerCar\PlayerCarInteraction.cs" />
-    <Compile Include="Assets\Script\CarNPC\CarNPCMovement.cs" />
+    <Compile Include="Assets\Script\SceneManagement.cs" />
+    <Compile Include="Assets\Script\SewerMonsterTrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
